@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jeeplus.modules.debug.dao.CoreDao">
+    
+	<sql id="demoColumns">
+		a.ID AS "id",
+		a.NAME AS "name",
+		a.AGE AS "age",
+		a.WORKS AS "works",
+		a.NUM AS "num",
+		a.DEL_FLAG AS "delFlag"
+	</sql>
+	
+	<sql id="allColumns">
+		a.*
+	</sql>
+	
+	<select id="findList" resultType="CoreEntity">
+		SELECT 
+			<include refid="demoColumns"/>
+		FROM employee a
+		WHERE a.del_flag = ${'0'}
+		<if test="name != null and name != ''">
+			AND a.name LIKE 
+					<if test="dbName == 'oracle'">'%'||#{name}||'%'</if>
+					<if test="dbName == 'mysql'">CONCAT('%', #{name}, '%')</if>
+		</if>
+	</select>
+	<select id="get" resultType="CoreEntity">
+		SELECT 
+			<include refid="demoColumns"/>
+		FROM employee a
+		WHERE a.id = #{id}
+	</select>
+	
+	<select id="findCount" resultType="Long">
+		SELECT 
+			count(a.id)
+		FROM employee a
+	</select>
+	
+		<insert id="insert">
+		INSERT INTO employee(
+			ID,
+			NAME,
+			AGE,
+			NUM,
+			WORKS,
+			DEL_FLAG
+		) VALUES (
+			#{id},
+			#{name},
+			#{age},
+			#{num},
+			#{works},
+			#{delFlag}
+		)
+	</insert>
+	
+	<update id="update">
+		UPDATE employee SET 	
+			NAME = #{name},
+			AGE = #{age},
+			WORKS = #{works},
+			NUM = #{num}
+		WHERE id = #{id}
+	</update>
+		<delete id="delete">
+		UPDATE employee SET 
+			DEL_FLAG = #{DEL_FLAG_DELETE}
+		WHERE id = #{id}
+	</delete>
+</mapper>

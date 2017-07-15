@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jeeplus.modules.demo.dao.TestDao">
+    
+	<sql id="demoColumns">
+		a.ID AS "id",
+		a.NAME AS "name",
+		a.AGE AS "age",
+		a.JOBS AS "jobs",
+		a.ADDRESS AS "address",
+		a.CREATE_BY AS "createBy.id",
+		a.CREATE_DATE AS "createDate",
+		a.UPDATE_BY AS "updateBy.id",
+		a.UPDATE_DATE AS "updateDate",
+		a.REMARKS AS "remarks",
+		a.DEL_FLAG AS "delFlag",
+	</sql>
+	
+	<sql id="allColumns">
+		a.*
+	</sql>
+	
+	<select id="get" resultType="Test">
+		SELECT 
+			<include refid="allColumns"/>
+		FROM test a
+		WHERE a.id = #{id}
+	</select>
+	
+	<select id="findList" resultType="Test">
+		SELECT 
+			<include refid="demoColumns"/>
+		FROM test a
+	</select>
+	
+	<select id="findAllList" resultType="Test">
+		SELECT 
+			<include refid="demoColumns"/>
+		FROM test a
+	</select>
+	
+	<select id="findAllData" resultType="Test">
+		SELECT 
+			<include refid="allColumns"/>
+		FROM test a
+	</select>
+	
+	<select id="findCount" resultType="Long">
+		SELECT 
+			count(1)
+		FROM test a
+	</select>
+	
+	<insert id="insert">
+		INSERT INTO test(
+			ID,
+			NAME,
+			AGE,
+			JOBS,
+			ADDRESS,
+			CREATE_BY,
+			CREATE_DATE,
+			UPDATE_BY,
+			UPDATE_DATE,
+			REMARKS,
+			DEL_FLAG
+		) VALUES (
+			#{id},
+			#{name},
+			#{age},
+			#{jobs},
+			#{address},
+			#{createBy.id},
+			#{createDate},
+			#{updateBy.id},
+			#{updateDate},
+			#{remarks},
+			#{delFlag}
+		)
+	</insert>
+	
+	<update id="update">
+		UPDATE test SET 	
+			NAME = #{name},
+			AGE = #{age},
+			JOBS = #{jobs},
+			ADDRESS = #{address},
+			UPDATE_BY = #{updateBy.id},
+			UPDATE_DATE = #{updateDate},
+			REMARKS = #{remarks}
+		WHERE id = #{id}
+	</update>
+	
+	<delete id="delete">
+		DELETE FROM test
+		WHERE id = #{id}
+	</delete>
+	
+	<update id="deleteByLogic">
+		UPDATE test SET 
+			del_flag = #{DEL_FLAG_DELETE}
+		WHERE id = #{id}
+	</update>
+	
+</mapper>

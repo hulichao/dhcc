@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jeeplus.modules.core.dao.WebDao">
+    
+	<sql id="demoColumns">
+		a.ID AS "id",
+		a.NAME AS "name",
+		a.AGE AS "age",
+		a.WORKS AS "works",
+		a.NUM AS "num",
+		a.DEL_FLAG AS "delFlag"
+	</sql>
+	
+	<sql id="allColumns">
+		a.*
+	</sql>
+	
+	<select id="get" resultType="Employee">
+		SELECT 
+			<include refid="allColumns"/>
+		FROM employee a
+		WHERE a.id = #{id}
+	</select>
+	
+	<select id="findList" resultType="Employee">
+		SELECT 
+			<include refid="demoColumns"/>
+		FROM employee a
+	</select>
+	
+	<select id="findAllList" resultType="Employee">
+		SELECT 
+			<include refid="demoColumns"/>
+		FROM employee a
+	</select>
+	
+	<select id="findAllData" resultType="Employee">
+		SELECT 
+			<include refid="allColumns"/>
+		FROM employee a
+		WHERE a.del_flag = ${'0'}
+	</select>
+	<select id="findByText" resultType="Employee">
+		SELECT 
+			<include refid="allColumns"/>
+		FROM employee a
+		WHERE a.name like #{0}
+	</select>
+	
+	<select id="findCount" resultType="Long">
+		SELECT 
+			count(1)
+		FROM employee a
+	</select>
+	
+	<insert id="insert">
+		INSERT INTO employee(
+			ID,
+			NAME,
+			AGE,
+			NUM,
+			WORKS,
+			DEL_FLAG
+		) VALUES (
+			#{id},
+			#{name},
+			#{age},
+			#{num},
+			#{works},
+			#{delFlag}
+		)
+	</insert>
+	
+	<update id="update">
+		UPDATE employee SET 	
+			NAME = #{name},
+			AGE = #{age},
+			WORKS = #{works},
+			NUM = #{num}
+		WHERE id = #{id}
+	</update>
+	
+	<delete id="delete">
+		UPDATE employee SET 
+			DEL_FLAG = #{DEL_FLAG_DELETE}
+		WHERE id = #{id}
+	</delete>
+	
+	<update id="deleteByLogic">
+		UPDATE employee SET 
+			del_flag = #{DEL_FLAG_DELETE}
+		WHERE id = #{id}
+	</update>
+	
+</mapper>
