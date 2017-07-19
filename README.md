@@ -1,0 +1,1 @@
+基于一款开源框架的敏捷开发，用到了 Spring、Spring-MVC、Mybits、Shiro、Encache、Websocket
