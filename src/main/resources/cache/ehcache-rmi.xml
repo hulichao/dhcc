@@ -10,6 +10,9 @@
 		properties="peerDiscovery=automatic,multicastGroupAddress=230.0.0.1, multicastGroupPort=4446" />
 	<cacheManagerPeerListenerFactory class="net.sf.ehcache.distribution.RMICacheManagerPeerListenerFactory" />
 
+
+
+
 	<diskStore path="../temp/jeeplus/ehcache" />
 
 	<!-- 默认缓存配置. -->
