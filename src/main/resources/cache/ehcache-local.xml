@@ -11,6 +11,10 @@
 	<cache name="sysCache" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true"/>
 	
 	<!-- 用户缓存 -->
+
+
+
+
 	<cache name="userCache" maxEntriesLocalHeap="100" eternal="true" overflowToDisk="true"/>
 	
 	<!-- 工作流模块缓存 -->
