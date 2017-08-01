@@ -10,6 +10,9 @@
 			<template>dao/mapper.xml</template>
 			<template>curd/viewForm.xml</template>
 			<template>curd/viewList.xml</template>
+
+
+
 		</category>
 		<category value="curd_many" label="增删改查（一对多）">
 			<template>curd/controller.xml</template>
