@@ -12,6 +12,11 @@ package ${packageName}.${moduleName}.dao<#if subModuleName != "">.${subModuleNam
 <#list table.importGridJavaDaoList as i>
 import ${i};
 </#list>
+
+
+
+
+
 import com.jeeplus.common.persistence.CrudDao;
 import com.jeeplus.common.persistence.annotation.MyBatisDao;
 import ${packageName}.${moduleName}.entity<#if subModuleName != "">.${subModuleName}</#if>.${ClassName};
