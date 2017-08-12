@@ -9,6 +9,8 @@
  */
 package ${packageName}.${moduleName}.service<#if subModuleName != "">.${subModuleName}</#if>;
 
+
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
