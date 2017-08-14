@@ -9,6 +9,8 @@
  */
 package ${packageName}.${moduleName}.web<#if subModuleName != "">.${subModuleName}</#if>;
 
+
+
 import java.util.List;
 import java.util.Map;
 
