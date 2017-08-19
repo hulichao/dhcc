@@ -11,6 +11,10 @@
 	<title>${functionNameSimple}管理</title>
 	<meta name="decorator" content="default"/>
 	<%@include file="/webpage/include/treetable.jsp" %>
+
+
+
+
 	<script type="text/javascript">
 		$(document).ready(function() {
 			var tpl = $("#treeTableTpl").html().replace(/(\/\/\<!\-\-)|(\/\/\-\->)/g,"");
