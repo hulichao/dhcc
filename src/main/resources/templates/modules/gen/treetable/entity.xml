@@ -9,6 +9,7 @@
  */
 package ${packageName}.${moduleName}.entity<#if subModuleName != "">.${subModuleName}</#if>;
 
+
 <#list table.importList as i>
 import ${i};
 </#list>
