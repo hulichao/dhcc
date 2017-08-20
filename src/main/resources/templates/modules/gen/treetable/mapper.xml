@@ -12,6 +12,11 @@
 	<sql id="${className}Columns">
 		<#assign columnField>
 			<#list table.columnList as c>
+
+
+
+
+
 		a.${c.name} AS "${c.javaFieldId}",
 			</#list>
 			<#list table.columnList as c>
