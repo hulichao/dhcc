@@ -12,6 +12,11 @@
 		a.errormsg AS "errormsg",
 		a.remarks AS "remarks",
 		a.del_flag AS "delFlag"
+
+
+
+
+
 	</sql>
 	
 	<sql id="testInterfaceJoins">
