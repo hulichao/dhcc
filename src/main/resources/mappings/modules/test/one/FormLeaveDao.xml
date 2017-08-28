@@ -8,6 +8,7 @@
 		a.office_id AS "office.id",
 		a.area_id AS "area.id",
 		a.begin_date AS "beginDate",
+
 		a.end_date AS "endDate",
 		a.create_by AS "createBy.id",
 		a.create_date AS "createDate",
