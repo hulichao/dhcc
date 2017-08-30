@@ -12,6 +12,11 @@
 		a.update_by AS "updateBy.id",
 		a.update_date AS "updateDate",
 		a.remarks AS "remarks",
+
+
+
+
+
 		a.del_flag AS "delFlag",
 		category.name AS "category.name"
 	</sql>
