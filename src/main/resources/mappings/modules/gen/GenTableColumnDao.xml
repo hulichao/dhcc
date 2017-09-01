@@ -10,6 +10,9 @@
 		b.class_name AS "genTable.className",
 		b.parent_table AS "genTable.parentTable",
 		b.parent_table_fk AS "genTable.parentTableFk"
+
+
+
 	</sql>
 	
 	<sql id="genTableColumnJoins">
