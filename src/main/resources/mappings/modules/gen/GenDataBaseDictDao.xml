@@ -8,6 +8,7 @@
 				t.TABLE_NAME AS name, 
 				c.COMMENTS AS comments
 			FROM user_tables t, user_tab_comments c 
+
 			WHERE t.table_name = c.table_name
 			<if test="name != null and name != ''">
 				AND t.TABLE_NAME = upper(#{name})
