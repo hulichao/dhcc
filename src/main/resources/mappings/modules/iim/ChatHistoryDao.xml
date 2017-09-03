@@ -8,6 +8,7 @@
 		a.userid2 AS "userid2",
 		a.msg AS "msg",
 		a.status AS "status",
+
 		a.create_date AS "createDate",
 		a.type AS "type"
 	</sql>
