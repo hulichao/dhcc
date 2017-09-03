@@ -12,6 +12,11 @@
 		a.mailid AS "mail.id",
 		receiver.name AS "receiver.name",
 		mail.title AS "mail.title",
+
+
+
+
+
 		mail.overview AS "mail.overview",
 		mail.content AS "mail.content"
 	</sql>
