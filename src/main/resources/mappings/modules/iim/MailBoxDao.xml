@@ -10,6 +10,9 @@
 		a.sendtime AS "sendtime",
 		a.mailid AS "mail.id",
 		receiver.name AS "receiver.name",
+
+
+
 		sender.name AS "sender.name",
 		sender.photo AS "sender.photo",
 		mail.title AS "mail.title",
