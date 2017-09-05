@@ -12,6 +12,11 @@
 		a.update_date AS "updateDate",
 		a.remarks AS "remarks",
 		a.del_flag AS "delFlag",
+
+
+
+
+
 		t_user.name AS "createBy.name",
 		t_user.photo AS "createBy.photo",
 		t_user.login_name AS "createBy.loginName"
