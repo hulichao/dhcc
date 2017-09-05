@@ -10,6 +10,9 @@
 	</sql>
 	
 	<sql id="mailJoins">
+
+
+
 	</sql>
     
 	<select id="get" resultType="Mail">
