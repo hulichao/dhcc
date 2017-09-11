@@ -9,6 +9,8 @@
 		<result property="loginName" column="login_name" />
 		<result property="password" column="password" />
 		<result property="no" column="no" />
+
+
 		<result property="name" column="name" />
 		<result property="email" column="email" />
 		<result property="phone" column="phone" />
