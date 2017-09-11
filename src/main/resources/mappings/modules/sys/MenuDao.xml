@@ -9,6 +9,8 @@
 		<result property="href" column="href" />
 		<result property="target" column="target" />
 		<result property="icon" column="icon" />
+
+
 		<result property="sort" column="sort" />
 		<result property="isShow" column="isShow" />
 		<result property="permission" column="permission" />
