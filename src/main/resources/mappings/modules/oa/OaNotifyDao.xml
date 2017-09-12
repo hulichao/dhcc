@@ -11,6 +11,10 @@
 		a.STATUS AS "status",
 		a.CREATE_BY AS "createBy.id",
 		a.CREATE_DATE AS "createDate",
+
+
+
+
 		a.UPDATE_BY AS "updateBy.id",
 		a.UPDATE_DATE AS "updateDate",
 		a.REMARKS AS "remarks",
