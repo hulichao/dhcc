@@ -9,6 +9,8 @@
 		WHERE id = #{id}
 	</select>
 	
+
+
 	<select id="findList" resultType="Dict">
 		SELECT 
 			* 
