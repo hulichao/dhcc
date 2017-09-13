@@ -9,6 +9,8 @@
 		a.READ_FLAG AS "readFlag",
 		a.READ_DATE AS "readDate",
 		u.name AS "user.name",
+
+
 		o.name AS "user.office.name"
 	</sql>
 	
