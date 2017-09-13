@@ -11,6 +11,10 @@
 		a.remarks AS "remarks",
 		a.del_flag AS "delFlag",
 		a.class_name AS "className",
+
+
+
+
 		a.num AS "num"
 	</sql>
 	
