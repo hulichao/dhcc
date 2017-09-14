@@ -10,6 +10,9 @@
 
  */
 
+
+
+
 (function($){
 	$.fn.slide=function(options){
 		$.fn.slide.defaults={
