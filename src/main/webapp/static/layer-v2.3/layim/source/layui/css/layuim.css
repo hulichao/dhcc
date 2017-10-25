@@ -9,6 +9,8 @@
 /* 该css就绪 */
 html #layuicss-layui-mobilecss{display:none; position: absolute; width:1989px;}
 
+
+
 /* 公共 */
 .main{width: auto; margin:0 10px;}
 .main320{position:relative; width:320px; margin:0 auto;}
