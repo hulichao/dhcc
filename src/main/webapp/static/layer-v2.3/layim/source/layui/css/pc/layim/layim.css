@@ -9,6 +9,7 @@
 /* 加载就绪标志 */
 html #layuicss-skinlayimcss{display:none; position: absolute; width:1989px;}
 
+
 body .layui-layim,
 body .layui-layim-chat{border: 1px solid #D9D9D9; background-repeat: no-repeat; background-color: #F6F6F6; color: #333;}
 body .layui-layim-chat{background-size: cover;}
