@@ -9,6 +9,8 @@
 layui.define(['jquery', 'layer'], function(exports){
   var $ = layui.jquery, layer = layui.layer;
   
+
+
   exports('upload', function(options){
     options = options || {};
     
