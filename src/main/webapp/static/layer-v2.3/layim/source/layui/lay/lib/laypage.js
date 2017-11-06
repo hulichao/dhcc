@@ -10,6 +10,9 @@ layui.define(function(exports){
   "use strict";
 
   function laypage(options){
+
+
+
     var skin = 'laypagecss';
     new Page(options);
   }
