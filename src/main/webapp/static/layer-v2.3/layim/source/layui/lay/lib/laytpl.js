@@ -10,6 +10,9 @@ layui.define(function(exports){
 
   "use strict";
 
+
+
+
   var config = {
     open: '{{',
     close: '}}'
