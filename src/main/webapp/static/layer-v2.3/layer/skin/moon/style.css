@@ -11,6 +11,10 @@ html #layui_layer_skinmoonstylecss {
 	width: 1989px;
 }
 body .layer-ext-moon[type="dialog"] {
+
+
+
+
 	min-width: 320px;
 }
 body .layer-ext-moon-msg[type="dialog"]{min-width:200px;}
