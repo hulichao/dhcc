@@ -10,6 +10,9 @@
 
 CKFinder.addPlugin( 'fileeditor', function( api )
 {
+
+
+
 	var regexExt = /^(.*)\.([^\.]+)$/,
 		regexTextExt = /^(txt|css|html|htm|js|asp|cfm|cfc|ascx|php|inc|xml|xslt|xsl|cs)$/i,
 		regexCodeMirrorExt = /^(css|html|htm|js|xml|xsl|php|cs)$/i,
