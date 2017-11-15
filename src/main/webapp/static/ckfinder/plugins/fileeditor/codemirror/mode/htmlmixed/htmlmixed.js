@@ -8,6 +8,7 @@
     if (style == "tag" && stream.current() == ">" && state.htmlState.context) {
       if (/^script$/i.test(state.htmlState.context.tagName)) {
         state.token = javascript;
+
         state.localState = jsMode.startState(htmlMode.indent(state.htmlState, ""));
         state.mode = "javascript";
       }
