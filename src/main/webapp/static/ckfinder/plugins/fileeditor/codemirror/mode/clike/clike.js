@@ -9,6 +9,8 @@
 
   var curPunc;
 
+
+
   function tokenBase(stream, state) {
     var ch = stream.next();
     if (hooks[ch]) {
