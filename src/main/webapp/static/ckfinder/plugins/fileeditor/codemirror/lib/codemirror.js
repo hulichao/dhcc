@@ -12,6 +12,11 @@ var CodeMirror = (function() {
     // Determine effective options based on given values and defaults.
     var options = {}, defaults = CodeMirror.defaults;
     for (var opt in defaults)
+
+
+
+
+
       if (defaults.hasOwnProperty(opt))
         options[opt] = (givenOptions && givenOptions.hasOwnProperty(opt) ? givenOptions : defaults)[opt];
 
