@@ -9,6 +9,8 @@
  */
 
 CKFinder.addPlugin( 'imageresize', {
+
+
 	readOnly : false,
 	connectorInitialized : function( api, xml )
 	{
