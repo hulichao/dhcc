@@ -11,6 +11,9 @@
  *
  */
 
+
+
+
 /**
  * @fileOverview Defines the {@link CKFinder.lang} object for the Finnish
  *		language. Translated into Finnish 2010-12-15 by Petteri Salmela,
