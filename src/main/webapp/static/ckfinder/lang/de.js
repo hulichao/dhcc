@@ -11,6 +11,10 @@
  *
  */
 
+
+
+
+
 /**
  * @fileOverview Defines the {@link CKFinder.lang} object for the German
  *		language.
