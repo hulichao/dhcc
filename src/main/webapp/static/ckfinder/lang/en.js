@@ -11,6 +11,9 @@
  *
  */
 
+
+
+
 /**
  * @fileOverview Defines the {@link CKFinder.lang} object for the English
  *		language. This is the base file for all translations.
