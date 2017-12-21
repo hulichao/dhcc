@@ -11,6 +11,9 @@
  *
  */
 
+
+
+
 /**
  * @fileOverview Defines the {@link CKFinder.lang} object for the Latin American Spanish
  *		language.
