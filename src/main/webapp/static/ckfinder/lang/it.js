@@ -8,6 +8,7 @@
  * License. Please read the license.txt file before using, installing, copying,
  * modifying, or distributing this file or part of its contents. The contents of
  * this file is part of the Source Code of CKFinder.
+
  *
  */
 
